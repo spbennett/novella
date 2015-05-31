@@ -4,3 +4,9 @@
 # Ignore temp junk
 *.tmp
 *.temp
+.DS_Store
+
+# Ignore build items
+bundle.js
+node_modules
+novella.app
