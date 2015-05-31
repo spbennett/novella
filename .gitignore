@@ -1,0 +1,6 @@
+# Novella gitignore File
+# Author: Steve Bennett
+
+# Ignore temp junk
+*.tmp
+*.temp
