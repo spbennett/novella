@@ -1,16 +1,37 @@
 {
-	"name": "novella",
-	"description": "eBook Manager built using electron and node.js",
-	"version": "0.0.1",
-	"author": "Steven Bennett",
-	"license": "GPL-3.0",
-	"repository": {
-  "type": "git",
-  "url": "https://github.com/spbennett/novella"
-	},
-	"keywords": [ "ebook", "kindle"],
-	"engines": {
-		"node": "0.12.x",
-		"npm": "2.10.x"
-	}
+  "name": "novella",
+  "description": "eBook Manager built using electron and node.js",
+  "version": "0.0.1",
+  "main": "app/main.js",
+  "author": "Steven Bennett",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/spbennett/novella"
+  },
+  "bugs": {
+    "url": "https://github.com/spbennett/novella/issues"
+  },
+  "keywords": [
+    "ebook",
+    "kindle",
+    "NodeJS",
+    "NPM",
+    "grunt",
+    "electron",
+    "atom-shell"
+  ],
+  "engines": {
+    "node": "0.12.x",
+    "npm": "2.10.x"
+  },
+  "devDependencies": {
+    "coffee-script": "1.9.x",
+    "EpubJS": "https://github.com/futurepress/epub.js.git",
+    "grunt-build-atom-shell": "2.1.x",
+		"grunt": "0.4.x",
+    "grunt-contrib-jshint": "0.10.x",
+    "grunt-contrib-nodeunit": "0.4.x",
+    "grunt-contrib-uglify": "0.5.x"
+  }
 }
