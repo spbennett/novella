@@ -2,7 +2,6 @@
 
 var app = require('app');
 var BrowserWindow = require('browser-window');
-var env = require('./vendor/electron_boilerplate/env_config');
 var devHelper = require('./vendor/electron_boilerplate/dev_helper');
 var windowStateKeeper = require('./vendor/electron_boilerplate/window_state');
 
@@ -22,17 +21,10 @@ app.on('ready', function () {
         width: mainWindowState.width,
         height: mainWindowState.height
     });
+    mainWindow.loadUrl('file://' + __dirname + '/spec.html');
 
-    if (mainWindowState.isMaximized) {
-        mainWindow.maximize();
-    }
-
-    mainWindow.loadUrl('file://' + __dirname + '/app.html');
-
-    if (env.name === 'development') {
-        devHelper.setDevMenu();
-        mainWindow.openDevTools();
-    }
+    devHelper.setDevMenu();
+    mainWindow.openDevTools();
 
     mainWindow.on('close', function () {
         mainWindowState.saveState(mainWindow);

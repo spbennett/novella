@@ -5,8 +5,16 @@
 *.tmp
 *.temp
 .DS_Store
+*.log
+Thumbs.db
 
 # Ignore build items
 bundle.js
 node_modules
+bower_components
+
+# Ignore build artifacts
+/build/
+/releases/
+/tmp/
 novella.app
