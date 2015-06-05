@@ -1,4 +1,4 @@
-# Novella gitignore File
+# Novella GitIgnore File
 # Author: Steve Bennett
 
 # Ignore temp junk
@@ -12,6 +12,8 @@ Thumbs.db
 bundle.js
 node_modules
 bower_components
+packages
+pubspec.lock
 
 # Ignore build artifacts
 /build/

@@ -9,3 +9,10 @@ The novella team thanks these awesome people for sharing their code.  You are th
 **Home:** [https://github.com/szwacz/electron-boilerplate](https://github.com/szwacz/electron-boilerplate)
 
 **License:** (MIT) Copyright 2015 Jakub Szwacz
+
+### Project: electron-packager
+
+**Home:**
+[https://github.com/maxogden/electron-packager](https://github.com/maxogden/electron-packager)
+
+**License** maxogden

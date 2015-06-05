@@ -1,6 +1,8 @@
-language: node_js
-node_js:
-  - "0.12"
-  - "0.11"
-  - "0.10"
-  - "iojs"
+language: dart
+dart:
+  - stable
+  - dev
+  - "1.10.1"
+install:
+  - ./build.sh
+  - ./package_app.sh
