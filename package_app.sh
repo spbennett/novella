@@ -20,8 +20,16 @@ case `uname -m` in
 esac
 
 # Get latest Electron version number from npm.
-echo "Getting latest Electron version number..."
-electron_version=`npm show electron-prebuilt version`
+echo "Getting latest Electron build tools..."
+npm install -g electron-prebuilt electron-packager
+if [ $? -eq 0 ]
+then
+  echo "Configuring latest Electron version number..."
+  electron_version=`npm show electron-prebuilt version`
+else
+  echo "Failed to fetch build tools." >&2
+  exit 1
+fi
 
 # Run electron-packager to make a distributable app.
 echo "Packaging application..."

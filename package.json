@@ -22,10 +22,10 @@
     "atom-shell"
   ],
   "dependencies": {
-    "jquery": "^2.1.3"
     "electron-prebuilt": "^0.27.2"
   },
   "scripts": {
+    "build": "bash ./build.sh",
     "package": "bash ./package_app.sh",
     "start": "open ./novella.app"
   }
