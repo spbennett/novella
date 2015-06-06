@@ -5,7 +5,7 @@
 #
 
 # Set some defaults for electron-packager.
-src='./app'
+src='./build/web'
 app='novella'
 platform=`echo $(uname) | tr '[:upper:]' '[:lower:]'`
 arch='linux'
