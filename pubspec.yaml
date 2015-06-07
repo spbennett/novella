@@ -7,5 +7,6 @@ documentation: https://github.com/spbennett/novella/wiki
 dependencies:
   browser: any
   electron: any
+  test: any
 transformers:
   - $dart2js

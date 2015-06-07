@@ -1,10 +1,7 @@
-library embiggen_test;
-
-import 'package:embiggen/embiggen.dart';
-import 'package:unittest/unittest.dart';
+import 'package:test/test.dart';
 
 main() {
-  test("bigifies text", () {
-    expect(embiggen("hello"), equals("HELLO"));
+  test("ezmode test", () {
+    expect(String("test"), equals("test"));
   });
 }  
