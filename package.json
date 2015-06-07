@@ -26,6 +26,6 @@
   "scripts": {
     "build": "bash ./build.sh",
     "package": "bash ./package_app.sh",
-    "start": "open ./novella.app"
+    "start": "open ./dist/novella.app"
   }
 }
