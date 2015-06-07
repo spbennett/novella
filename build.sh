@@ -24,10 +24,10 @@ echo "Copying Electron essentials to build dir..."
 # 1) package.json
 # Replace 3rd , with a }
 echo "Generating package.json..."
-echo "$(head -n 4 ./package.json)EOF" | sed 's/,EOF/\}/' > build/web/package.json
+echo "$(head -n 4 ./package.json)EOF" | sed 's/,EOF/\}/' > ./build/web/package.json
 # 2) main.js
-echo "Copying main.js to build..."
-cp ./lib/main.js ./build/web
+#echo "Copying main.js to build..."
+#cp ./lib/main.js ./build/web
 
 echo "Build ready."
 exit 0

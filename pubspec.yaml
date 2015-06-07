@@ -1,5 +1,11 @@
-name: todomvc_vanilladart
-version: 1.0.1
-description: TodoMVC built with Dart. Simple, vanilla Dart.
+name: novella
+version: 0.0.1
+description: An open-source eBook manager built with web technologies.
+author: Steven Bennett <stevebennett08@gmail.com>
+homepage: https://github.com/spbennett/novella
+documentation: https://github.com/spbennett/novella/wiki
 dependencies:
   browser: any
+  electron: any
+transformers:
+  - $dart2js

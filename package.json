@@ -1,7 +1,7 @@
 {
   "name": "novella",
   "version": "0.0.1",
-  "main": "main.js",
+  "main": "main.dart.js",
   "description": "eBook Manager built with Dart",
   "author": "Steven Bennett <stevebennett08@gmail.com>",
   "productName": "novella",
@@ -19,10 +19,9 @@
     "kindle",
     "Dart",
     "electron",
-    "atom-shell"
   ],
   "dependencies": {
-    "electron-prebuilt": "^0.27.2"
+    "electron-packager": "^4.1.2"
   },
   "scripts": {
     "build": "bash ./build.sh",

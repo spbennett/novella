@@ -6,6 +6,7 @@
 
 # Set some defaults for electron-packager.
 src='./build/web'
+dist='./dist'
 app='novella'
 platform=`echo $(uname) | tr '[:upper:]' '[:lower:]'`
 arch='linux'
@@ -18,6 +19,9 @@ case `uname -m` in
     "x86_64" )
         arch=x64 ;;
 esac
+
+echo "Cleaning workspace..."
+rm -rf ./dist/
 
 # Get latest Electron version number from npm.
 echo "Getting latest Electron build tools..."
@@ -33,7 +37,7 @@ fi
 
 # Run electron-packager to make a distributable app.
 echo "Packaging application..."
-electron-packager $src $app --platform=$platform --arch=$arch --version=$electron_version
+electron-packager $src $app --platform=$platform --arch=$arch --version=$electron_version --out=$dist
 if [ $? -eq 0 ]
 then
   echo "Successfully packaged Electron app!"
