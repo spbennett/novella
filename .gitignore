@@ -1,6 +1,9 @@
 # Novella GitIgnore File
 # Author: Steve Bennett
 
+# Ignore IDE files
+.idea/
+
 # Ignore temp junk
 *.tmp
 *.temp
@@ -15,6 +18,7 @@ node_modules
 bower_components
 packages
 pubspec.lock
+.pub/
 
 # Ignore build artifacts
 /build/
