@@ -7,15 +7,12 @@ documentation: https://github.com/spbennett/novella/wiki
 environment:
   sdk: '>=1.10.0 <2.0.0'
 dependencies:
-  browser: any
   core_elements: '>=0.7.1 < 0.8.0'
-  electron: '>=0.0.1 < 1.0.0'
   paper_elements: '>=0.7.1 < 0.8.0'
   polymer: '>=0.16.0 < 0.17.0'
   route_hierarchical: '>=0.6.0 < 0.7.0'
-  test: any
 dev_dependencies:
-  test: '>=0.12.0 <0.13.0'
+  test: any
 transformers:
   - polymer:
       entry_points: web/index.html
