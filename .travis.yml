@@ -5,7 +5,7 @@ dart:
 # Explicit build lifecycle
 install:
   - pub --verbosity=normal get
-script:
+before_script:
   - pub --verbosity=normal build
-after-success:
+script:
   - pub --verbosity=all run test
