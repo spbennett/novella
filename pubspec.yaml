@@ -4,9 +4,18 @@ description: An open-source eBook manager built with web technologies.
 author: Steven Bennett <stevebennett08@gmail.com>
 homepage: https://github.com/spbennett/novella
 documentation: https://github.com/spbennett/novella/wiki
+environment:
+  sdk: '>=1.10.0 <2.0.0'
 dependencies:
-  browser: any
-  electron: any
+  #browser: any
+  core_elements: '>=0.7.1 < 0.8.0'
+  electron: '>=0.0.1 < 1.0.0'
+  paper_elements: '>=0.7.1 < 0.8.0'
+  polymer: '>=0.16.0 < 0.17.0'
+  route_hierarchical: '>=0.6.0 < 0.7.0'
   test: any
 transformers:
-  - $dart2js
+#  - $dart2js:
+#      $include: "**/*.polymer.bootstrap.dart"
+  - polymer:
+      entry_points: web/index.html

@@ -2,9 +2,3 @@ language: dart
 dart:
   # Any version is cool but use stable.
   - stable
-install:
-  # Test the dart compile (build.sh).
-  - ./build.sh
-before_script:
-  # Test the Electron packaging.
-  - ./package_app.sh
