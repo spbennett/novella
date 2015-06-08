@@ -4,8 +4,8 @@ dart:
   - stable
 # Explicit build lifecycle
 install:
-  - pub --verbosity=all get
+  - pub --verbosity=normal get
 script:
-  - pub --verbosity=all build
+  - pub --verbosity=normal build
 after-success:
   - pub --verbosity=all run test
