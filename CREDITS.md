@@ -8,4 +8,4 @@ The novella team thanks these awesome people for sharing their code.  You are th
 
 **Home:** [https://github.com/dart-lang/polymer-spa-example](https://github.com/dart-lang/polymer-spa-example)
 
-**License:** (MIT) Copyright 2015 Dart project authors
+**License:** Copyright 2015 Dart project authors
