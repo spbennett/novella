@@ -2,3 +2,5 @@ language: dart
 dart:
   # Any version is cool but use stable.
   - stable
+after-success:
+  - pub run test
