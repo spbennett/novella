@@ -2,5 +2,10 @@ language: dart
 dart:
   # Any version is cool but use stable.
   - stable
+# Explicit build lifecycle
+install:
+  - pub --verbosity=all get
+script:
+  - pub --verbosity=all build
 after-success:
-  - pub run test
+  - pub --verbosity=all run test
