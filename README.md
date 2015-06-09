@@ -1,20 +1,17 @@
-# Novella (WIP)
+# Novella (Under Construction)
 Introducing *Novella*
 
 ![alt text](https://github.com/spbennett/novella/raw/master/img/novella_1.png "novella")
 
 [![Build Status](https://travis-ci.org/spbennett/novella.svg?branch=master)](https://travis-ci.org/spbennett/novella)
-[![devDependency Status](https://david-dm.org/spbennett/novella.svg)](https://david-dm.org/spbennett/novella#info=devDependencies)
 
 
-Novella is intended to be a new open-source eBook management application written on top of NodeJS powered by Web Technologies.
+Novella will be a new open-source eBook management application powered by Web Technologies.  It is written in [Dart by Google](https://www.dartlang.org) and powered by [Polymer](https://www.polymer-project.org) web components.
 
-This began as a personal project of mine as a chance to learn more about MVC using Javascript.  I also wanted to develop a modern desktop application from end-to-end with some fun new tools.
+To me, this project is a chance to learn more about MVC using modern web development tools and frameworks.  I also thought the world would be a better place with a modern, modular open-source eBook manager written in web languages that anyone can contribute to.
 
-eBook Library applications exist, but each has its own problems.  Mac has iBooks but it's not Kindle friendly.  Calibre is feature-rich but the UI is a horror on the eyes.  
+There are other great eBook Library applications out there, but each has its own problems.  Mac has iBooks but it's close-source and not Kindle friendly.  Calibre is feature-rich but the UI is a horror on the eyes.  
 
-I finally spent a few weekends mapping out what I'd like in an eBook manager and I scraped together some initial code for a prototype.
+Finally, I decided to do something about it and spent a few weekends mapping out what I'd like in an eBook manager.  What you see is the code I scraped together for a prototype.
 
-I am now releasing what I've made to make it available to the open-source and Github communities.
-
-So here we are.
+This project is available to the open-source and Github communities.  Feel free to fork it and submit a pull request.  Also, feedback on where you'd like to see the project go is welcome.
