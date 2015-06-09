@@ -1,6 +1,6 @@
-<polymer-element name="example-app">
+<polymer-element name="novella-app">
   <template>
-    <link rel="stylesheet" href="example_app.css">
+    <link rel="stylesheet" href="novella_app.css">
 
     <!-- Keyboard nav controller. -->
     <core-a11y-keys id="keys" target="{{body}}"
@@ -10,7 +10,7 @@
     <core-scaffold id="scaffold">
       <nav>
         <core-toolbar>
-          <span>Single Page Polymer</span>
+          <span>Views Toolbar</span>
         </core-toolbar>
         <core-menu id="menu" valueattr="hash" selected="{{route}}">
           <template repeat="{{page in pages}}">

@@ -2,8 +2,8 @@
 // for details. All rights reserved. Use of this source code is governed by a
 // BSD-style license that can be found in the LICENSE file.
 
-@HtmlImport('src/example_app.html')
-library polymer_core_and_paper_examples.spa.app;
+@HtmlImport('src/novella_app.html')
+library novella.app;
 
 import 'dart:html';
 import 'dart:js';
@@ -23,18 +23,18 @@ class Page {
 
 /// Element representing the entire example app. There should only be one of
 /// these in existence.
-@CustomTag('example-app')
-class ExampleApp extends PolymerElement {
+@CustomTag('novella-app')
+class NovellaApp extends PolymerElement {
   /// The current selected [Page].
   @observable Page selectedPage;
 
   /// The list of pages in our app.
   final List<Page> pages = const [
-    const Page('Single', 'one', isDefault: true),
-    const Page('page', 'two'),
-    const Page('app', 'three'),
-    const Page('using', 'four'),
-    const Page('Polymer', 'five'),
+    const Page('Authors', 'one', isDefault: true),
+    const Page('Titles', 'two'),
+    const Page('Genre', 'three'),
+    const Page('All Books', 'four'),
+    const Page('Digital Marketplace', 'five'),
   ];
 
   /// The path of the current [Page].
@@ -43,7 +43,7 @@ class ExampleApp extends PolymerElement {
   /// The [Router] which is going to control the app.
   final Router router = new Router(useFragment: true);
 
-  ExampleApp.created() : super.created();
+  NovellaApp.created() : super.created();
 
   /// Convenience getters that return the expected types to avoid casts.
   CoreA11yKeys get keys => $['keys'];
@@ -98,7 +98,7 @@ class ExampleApp extends PolymerElement {
         return;
       case 'space':
         detail['shift'] ? corePages.selectPrevious(false)
-        : corePages.selectNext(false);
+            : corePages.selectNext(false);
         return;
     }
 

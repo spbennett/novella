@@ -4,7 +4,7 @@
 }
 
 :host /deep/ core-toolbar {
-  background-color: #03a9f4;
+  background-color: #E3DFC9;
   color: #fff;
 }
 
@@ -23,7 +23,7 @@ core-animated-pages > * {
 }
 
 core-menu {
-  color: #01579b;
+  color: #939393;
   margin: 10px 0 0 0;
 }
 
@@ -38,7 +38,7 @@ paper-item a {
 }
 
 core-menu > paper-item.core-selected {
-  background: #e1f5fe;
+  background: #EDECE6;
 }
 
 @media all and (max-width: 480px) {

@@ -3,7 +3,7 @@
 // BSD-style license that can be found in the LICENSE file.
 
 /// Packages up all the elements that we use in our app into a single import.
-library polymer_core_and_paper_examples.spa.elements;
+library novella.elements;
 
 export 'package:core_elements/core_ajax_dart.dart';
 export 'package:core_elements/core_a11y_keys.dart';
