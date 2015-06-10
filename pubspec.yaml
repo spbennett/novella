@@ -1,3 +1,10 @@
+# Copyright (c) 2015, Steven Bennett.  All rights reserved.  Please see the
+# AUTHORS file for collaborators. This code is distributed with a copy of
+# the MIT license.  Please see the LICENSE file for details and rights.
+
+# Package dependency and information metadata for this pub package.
+# https://www.dartlang.org/tools/pub/pubspec.html
+
 name: novella
 version: 0.0.1
 description: An open-source eBook manager built with web technologies.
