@@ -8,15 +8,22 @@
 src='./build/web'
 dist='./dist'
 app='novella'
+
+# Determine current platform.
+# Allowed: linux, win32, darwin
 platform=`echo $(uname) | tr '[:upper:]' '[:lower:]'`
-arch='linux'
-electron_version='0.27.2'
+if [ "$platform" != 'darwin' -a "$platform" != 'linux' ];then
+  echo "Platform is probably Windows."
+  platform='win32'
+fi
 
 # Determine current architecture.
 case `uname -m` in
     "i386" )
         arch='i386' ;;
     "x86_64" )
+        arch=x64 ;;
+    * )
         arch=x64 ;;
 esac
 
@@ -26,8 +33,7 @@ rm -rf ./dist/
 # Get latest Electron version number from npm.
 echo "Getting latest Electron build tools..."
 npm install -g electron-prebuilt electron-packager
-if [ $? -eq 0 ]
-then
+if [ $? -eq 0 ];then
   echo "Configuring latest Electron version number..."
   electron_version=`npm show electron-prebuilt version`
 else
