@@ -32,7 +32,7 @@ rm -rf ./dist/
 
 # Get latest Electron version number from npm.
 echo "Getting latest Electron build tools..."
-npm install -g electron-prebuilt electron-packager
+npm install -g electron-packager
 if [ $? -eq 0 ];then
   echo "Configuring latest Electron version number..."
   electron_version=`npm show electron-prebuilt version`
