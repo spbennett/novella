@@ -6,7 +6,7 @@ dart:
 install:
   # Build script performs pub get and build then adds
   # Electron components into build dir.
-  - bash ./script/build.sh
+  - bash ./scripts/build.sh
 before_script:
   # Zip through unit tests now that the project is
   # built.
@@ -14,5 +14,5 @@ before_script:
 script:
   # Project is built and tests have passed.  Now kick
   # off the packaging script to make an Electron app!
-  - bash ./script/package_app.sh
+  - bash ./scripts/package_app.sh
 
