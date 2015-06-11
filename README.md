@@ -1,15 +1,15 @@
-# novella
+# Novella
 
-Welcome to novella, a new open-source eBook management app powered by web technologies.  It is written primarily in [Dart](https://www.dartlang.org), a language for web applications by Google, and powered by [Polymer](https://www.polymer-project.org), a web components framework.
+Introducing Novella, a new open-source eBook management app powered by web technologies.  Novella is written primarily in [Dart](https://www.dartlang.org), a language for web applications by Google, and powered by [Polymer](https://www.polymer-project.org), a web components framework.
 
 ![alt text](https://github.com/spbennett/novella/raw/master/img/novella_1.png "novella")
 
 [![Build Status](https://travis-ci.org/spbennett/novella.svg?branch=master)](https://travis-ci.org/spbennett/novella)
 
 
-## Building novella
+## Building Novella
 
-As a Dart app, novella can be built the same way you are used to building any other Dart app.
+As a Dart app, Novella can be built the same way you are used to building any other Dart app.
 
 __Prerequisites:__
 - dart sdk
@@ -33,4 +33,4 @@ Finally, I decided to do something about it.  I spent a few weekends mapping out
 
 To me, this project is a chance to learn more about MVC using modern web development tools and frameworks.  I also thought the world would be a better place with a modular, open-source eBook manager written in web languages that anyone could contribute to.
 
-This project is available to the open-source and Github communities.  Feel free to fork it and submit pull requests.  Also, feedback on where you'd like to see the project go is welcome.
+This project is available to the open-source and Github communities.  Feel free to fork it and submit pull requests.  Also, feedback on where you'd like to see the project go is welcome too.
