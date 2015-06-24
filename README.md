@@ -6,7 +6,6 @@ Introducing Novella, a new open-source eBook management app powered by web techn
 
 [![Build Status](https://travis-ci.org/spbennett/novella.svg?branch=master)](https://travis-ci.org/spbennett/novella)
 
-
 ## Building Novella
 
 As a Dart app, Novella can be built the same way you are used to building any other Dart app.
@@ -17,17 +16,21 @@ __Prerequisites:__
 - npm
 - nodejs
 
-Dart and [Pub](https://pub.dartlang.org/), the Dart package manager, will handle all of the project dependencies.  Once the project is built, you will need NodeJS and npm to package the compiler output as an Electron app.
+[Dart](https://www.dartlang.org) and [Pub](https://pub.dartlang.org/), the Dart package manager, will handle all of the project dependencies.  Once the project is built, you will need NodeJS and npm to package the compiler output as an Electron app.
 
 The build process is carried out in the following Bash script:
-${NOVELLA_ROOT}/scripts/build.sh
+```bash
+$ ./scripts/build.sh
+```
 
 If that completes successfully, you can run the following script to package the compiled files as an Electron app:
-${NOVELLA_ROOT}/scripts/package_app.sh
+```bash
+$ ./scripts/package_app.sh
+```
 
 ## Why novella?
 
-There are other great eBook Library applications out there, but each has its own problems.  Mac has iBooks but it's close-source and not Kindle friendly.  Calibre is feature-rich but the UI is a horror on the eyes.
+There are other great eBook Library applications out there, but each has its own problems.  OSX has iBooks but it's close-source and not Kindle friendly.  Calibre is feature-rich but the UI is a horror on the eyes.
 
 Finally, I decided to do something about it.  I spent a few weekends mapping out what I'd like in an eBook manager.  What you see is the code I scraped together for a prototype.
 
