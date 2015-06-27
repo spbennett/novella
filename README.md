@@ -16,7 +16,7 @@ __Prerequisites:__
 - npm
 - nodejs
 
-[Dart](https://www.dartlang.org) and [Pub](https://pub.dartlang.org/), the Dart package manager, will handle all of the project dependencies.  Once the project is built, you will need NodeJS and npm to package the compiler output as an Electron app.
+[Dart](https://www.dartlang.org) and [Pub](https://pub.dartlang.org/), the Dart package manager, will handle all of the project dependencies.  Once the project is built, you will need Node.js and npm to package the Dart compiler output as an Electron app.
 
 The build process is carried out in the following Bash script:
 ```bash
@@ -27,8 +27,17 @@ If that completes successfully, you can run the following script to package the 
 ```bash
 $ ./scripts/package_app.sh
 ```
+### Running Novella
 
-## Why novella?
+Novella is meant to be run as an Electron App.  The build system will package an Electron executable.
+
+On OSX, the output can be found and run from the dist folder as shown below:
+```bash
+$ ./dist/novella.app
+```
+
+
+## Why Novella?
 
 I wanted to write a [Dart](https://www.dartlang.org) app.
 
