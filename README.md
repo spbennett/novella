@@ -6,9 +6,13 @@ Introducing Novella, an experimental open-source eBook management app powered by
 
 [![Build Status](https://travis-ci.org/spbennett/novella.svg?branch=master)](https://travis-ci.org/spbennett/novella)
 
-## Building Novella
+## Using Novella
 
-As a Dart app, Novella can be built the same way you are used to building any other Dart app.
+As a Dart app, Novella can be run in a browser or as an Electron app.
+
+### Building Novella
+
+Novella can be built the same way you are used to building any other Dart app.  There are build scripts included that serve as wrappers for the pub commands.
 
 __Prerequisites:__
 - dart sdk
