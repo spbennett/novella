@@ -30,16 +30,23 @@ esac
 echo "Cleaning workspace..."
 rm -rf ./dist/
 
-# Get latest Electron version number from npm.
-echo "Getting latest Electron build tools..."
-npm install -g electron-packager
-if [ $? -eq 0 ];then
-  echo "Configuring latest Electron version number..."
-  electron_version=`npm show electron-prebuilt version`
+# Ensure electron-packager is installed.
+echo "Checking for Electron build tools..."
+npm -g list electron-packager
+if [ $? -ne 0 ];then
+  echo "No Electron build tools found..."
+  npm install -g electron-packager
+  if [ $? -ne 0 ];then
+    echo "Failed to fetch build tools." >&2
+    exit 1
+  fi
 else
-  echo "Failed to fetch build tools." >&2
-  exit 1
+  echo "Build tools found!"
 fi
+
+# Get latest Electron version number from npm.
+echo "Configuring latest Electron version number..."
+electron_version=`npm show electron-prebuilt version`
 
 # Run electron-packager to make a distributable app.
 echo "Packaging application..."

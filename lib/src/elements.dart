@@ -14,5 +14,4 @@ export 'package:core_elements/core_icon_button.dart';
 export 'package:core_elements/core_menu.dart';
 export 'package:core_elements/core_scaffold.dart';
 export 'package:core_elements/core_toolbar.dart';
-export 'package:core_elements/roboto.dart';
 export 'package:paper_elements/paper_item.dart';
