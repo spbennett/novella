@@ -3,7 +3,7 @@
 # the MIT license.  Please see the LICENSE file for details and rights.
 
 # Travis CI Build Instructions.
-# Build Dart project, run unit tests, and package an Electron App.
+# Build Dart project, run unit tests, and package as an Electron App.
 
 language: dart
 dart:
@@ -22,4 +22,3 @@ script:
   # Project is built and tests have passed.  Now kick
   # off the packaging script to make an Electron app!
   - bash ./scripts/package_app.sh
-
