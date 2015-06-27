@@ -1,10 +1,20 @@
+<!---
+Copyright (c) 2015, Steven Bennett.  All rights reserved.  Please see the AUTHORS file for collaborators. This code is distributed with a copy of the MIT license.  Please see the LICENSE file for details and rights.
+--->
 # Novella
 
 Introducing Novella, an experimental open-source eBook management app powered by web technologies.  Novella is written primarily in [Dart](https://www.dartlang.org), a language for web applications by Google, and powered by [Polymer](https://www.polymer-project.org), a web components framework.
 
 ![alt text](https://github.com/spbennett/novella/raw/master/img/novella_1.png "novella")
 
+<!---
+BEGIN BUILD WIDGETS
+-->
 [![Build Status](https://travis-ci.org/spbennett/novella.svg?branch=master)](https://travis-ci.org/spbennett/novella)
+[![Coverage Status](https://coveralls.io/repos/spbennett/novella/badge.svg)](https://coveralls.io/r/spbennett/novella)
+<!---
+END BUILD WIDGETS
+-->
 
 ## Using Novella
 
