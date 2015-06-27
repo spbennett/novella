@@ -6,22 +6,23 @@
 # https://www.dartlang.org/tools/pub/pubspec.html
 
 name: novella
-version: 0.0.1
+version: 0.0.10
 description: An open-source eBook manager built with web technologies.
 author: Steven Bennett <stevebennett08@gmail.com>
 homepage: https://github.com/spbennett/novella
 documentation: https://github.com/spbennett/novella/wiki
 environment:
-  sdk: '>=1.10.0 <2.0.0'
+  sdk: '>=1.8.3 <2.0.0'
 dependencies:
-  args: '>=0.13.2 <0.14.0'
+  args: ^0.13.2
   browser: any
-  core_elements: '>=0.7.1 <0.8.0'
+  core_elements: ^0.7.1
   #electron: any
-  paper_elements: '>=0.7.1 <0.8.0'
-  polymer: '>=0.16.0 <0.17.0'
-  route_hierarchical: '>=0.6.0 <0.7.0'
-  yaml: '>=2.1.3 <3.0.0'
+  lawndart: any
+  paper_elements: ^0.7.1
+  polymer: ^0.16.0
+  route_hierarchical: ^0.6.0
+  yaml: ^2.1.3
 dev_dependencies:
   test: any
 transformers:
