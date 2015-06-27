@@ -29,4 +29,4 @@ transformers:
       entry_points: web/index.html
   #- electron
 executables:
-  jsonGenerator: jsonGenerator.dart
+  jsonGenerator: jsonGenerator

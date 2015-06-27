@@ -31,11 +31,13 @@ echo "Copying Electron essentials to build dir..."
 # This gives us the minimal metadata entries for an Electron app.
 #echo "$(head -n 4 ./package.json)EOF" | sed 's/,EOF/\}/' > ./build/web/package.json
 if [[ ! -e "./package.json" ]];then
-  echo "No package.json found... generating."
-  pub run jsonGenerator --file ./pubspec.yaml > ./build/web/package.json
+  echo "No package.json found..."
+  echo "Running jsonGenerator..."
+  pub run novella:jsonGenerator --file ./pubspec.yaml > ./build/web/package.json
   if [[ $? -ne 0 ]];then
-    echo "pub bin not found... attempting to activate"
-    pub global activate --source path . && pub run jsonGenerator --file ./pubspec.yaml > ./build/web/package.json
+    echo "pub bin not found..."
+    echo "attempting to activate..."
+    pub global activate --source path . && pub run novella:jsonGenerator --file ./pubspec.yaml > ./build/web/package.json
     if [[ $? -ne 0 ]];then
       echo "Failed... exiting."
       exit 1
